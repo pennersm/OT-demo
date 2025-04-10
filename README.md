@@ -6,7 +6,7 @@ This toolkit is a modular “toolbox” of industrial process simulations. Each 
 
 Each protocol-specific module includes:
 1. `requirements.txt` for Python dependencies.
-2. Main controller simulation (`modbus-server.py`, `goose-publisher.py`, etc.).
+2. Main controller simulation script (e.g. `modbus-plc1.py` or  `goose-BIED1-subscriber.py`, etc...).
 3. HMI simulation showing process status.
 4. `reality-loop.py` for background sensor behavior simulation.
 5. `OTdemo.conf` configuration file (shared format, module-specific section).
@@ -49,10 +49,13 @@ Configuration file. Each module reads its section for:
 - `JSON_FILE`
 - `TMP_FILE`
 - `PLC_LOG_FILE`
+- `PLC_SERVER_IP`
+- `PLC_SERVER_PORT`
 - `REALITY_LOG_FILE`
 - `PRINT_STATUS_CYCLE`
 - `PLC_LOOP_MULTIPLIER`
 - `REALITY_CYCLE`
+- `HMI_POLL_INTERVAL`
 - `MEMORY_VIEW`
 
 ---

@@ -34,7 +34,8 @@ LABELS = {
     'coils': {
         0: "Pump (coil 0)",
         1: "Alarm (coil 1)",
-        2: "Fan (coil 2)"
+        2: "Fan (coil 2)",
+        3: "Emergency Stop (coil 3)"
     },
     'discrete_inputs': {
         0: "Door Closed (di 0)",
