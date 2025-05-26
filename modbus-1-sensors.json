@@ -1,0 +1,34 @@
+{
+  "coils": {
+    "0": 1,    # Pump ON
+    "1": 0,    # Alarm OFF
+    "2": 1,    # Fan ON
+    "3": 0,    # Heating OFF
+    "4": 0,    # Emergency Stop OFF
+    "5": 0     # Pressure Relief Valve (Closed = 0, Open = 1)
+  },
+  "discrete_inputs": {
+    "0": 1,    # Door Closed
+    "1": 1,    # Safety OK
+    "2": 1,    # Fan Active
+    "3": 1     # Heating Active
+  },
+  "input_registers": {
+    "0": 250,  # Pump Voltage
+    "1": 57,   # Temperature
+    "2": 880,  # Pressure
+    "3": 100,  # Throughput
+    "4": 60,   # Fan RPM
+    "5": 0     # Heater Power
+  },
+  "holding_registers": {
+    "0": 55,     # Target Temperature
+    "1": 900,    # Target Pressure
+    "2": 75,     # Alarm Temp Threshold
+    "3": 1100,   # Alarm Pressure Threshold
+    "4": 1,      # Mode: 1 = Auto, 2 = Manual, 0 = Idle
+    "5": 0,      # Pump control delta
+    "6": 1150,   # Relief Pressure Threshold
+    "7": 50      # Pressure Bleed Rate (per cycle)
+  }
+}
