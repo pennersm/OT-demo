@@ -1,0 +1,9 @@
+curl -v http://20.20.20.111/ -o /dev/nul
+curl -v http://20.20.20.111/files/sample.txt
+malicious upload
+curl -v -F "file=@/tmp/eicar.txt;filename=eicar_test.exe" http://20.20.20.111/upload.php
+custom header for custom signature
+curl -v -H "X-LAB-TRIGGER: lab-alert" http://20.20.20.111/trigger.php
+curl -v "http://20.20.20.111/search.php?q=alice' OR '1'= '1"
+curl -v -H "User-Agent: BadBot/1.0 (evil-test)" http://20.20.20.111/
+for i in {1..200}; do curl -s http://20.20.20.111/ >/dev/null & done; wait
